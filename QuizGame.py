@@ -1,7 +1,8 @@
 gamePlay = True
 while gamePlay == True:
-    score = 0
+    
     print("Welcome to my computer quiz!")
+    score = 0
 
     #question1
     answer = input("What does CPU stand for? ")
@@ -35,12 +36,36 @@ while gamePlay == True:
     else:
         print("Incorrect")
 
-    print("You got " + str(score) + " questions correct!")
-    print("You got " + str((score / 4) * 100) + "%.")
+    #question5
+    answer = input("Which component of a computer is responsible for storing data permanently? ")
+    if answer.lower() == "hard drive":
+        print("Correct")
+        score += 2
+    else:
+        print("Incorrect")
+
+    #question6
+    answer = input("What is the function of a firewall in a computer? ")
+    if answer.lower() == "to block unauthorized access":
+        print("Correct")
+        score += 2
+    else:
+        print("Incorrect")
+
+#question7
+    answer = input("What is the purpose of a firewall? ")
+    if answer.lower() == "to block unwanted traffic":
+        print("Correct")
+        score += 2
+    else:
+        print("Incorrect")
+
+    print("You got " + str(score) + " points!")
+    print("You got " + str((score / 7) * 100) + "%.")
 
 
-    playing = input("Would you like to play again? ")
-    if playing.lower() != "yes":
+    play = input("Would you like to play again? ")
+    if play.lower() != "yes":
         quit()
     
     print("Okay! Let's Play Then")
