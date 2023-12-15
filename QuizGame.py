@@ -61,7 +61,7 @@ while gamePlay == True:
         print("Incorrect")
 
     print("You got " + str(score) + " points!")
-    print("You got " + str((score / 7) * 100) + "%.")
+    print("You scored " + str((score / 7) * 100) + "%.")
 
 
     play = input("Would you like to play again? ")
