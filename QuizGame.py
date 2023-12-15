@@ -52,7 +52,7 @@ while gamePlay == True:
     else:
         print("Incorrect")
 
-#question7
+    #question7
     answer = input("What is the purpose of a firewall? ")
     if answer.lower() == "to block unwanted traffic":
         print("Correct")
@@ -60,8 +60,8 @@ while gamePlay == True:
     else:
         print("Incorrect")
 
-    print("You got " + str(score) + " points!")
-    print("You scored " + str((score / 7) * 100) + "%.")
+    print("You got ", (score), " points!")
+    print("You scored ", ((score / 7) * 100), "%.")
 
 
     play = input("Would you like to play again? ")
