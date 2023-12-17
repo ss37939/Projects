@@ -9,7 +9,7 @@ while True:
     
     # This line is asking for user input and changes the input to ll lowercase letters in case the user enters uppercase
     user_input = input("Type Rock, Paper, Scissors or Q to quit: ").lower()
-    if user_input== "q": # This exits the while loop if the user wants to quit
+    if user_input == "q": # This exits the while loop if the user wants to quit
         break
     
     if user_input not in options:
@@ -29,7 +29,7 @@ while True:
         print("Winner Winner Chicken Dinner")
         user_wins += 1 #increases user score
         
-    elif user_input == "scissors" and comp_pick == "rock":
+    elif user_input == "rock" and comp_pick == "scissors":
         print("Winner Winner Chicken Dinner")
         user_wins += 1 #increases user score
     
